@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        body{background-color: black;}
+        .md{background-color: black;text-align: center;margin-top: 300px;}
+        /* .i{display: none;} */
+        .i,.i1{
+            position: absolute;
+        }
+        .i1:hover~.i2{
+            translate: -80px -30px;
+            transition-duration: 4s;
+            transform: skew(0deg,15deg);
+        }
+        .i1:hover~.i3{
+            translate: 80px -30px;
+            transition-duration: 4s;
+            transform: skew(0deg,-15deg);
+        }
+        .i1:hover~.i4{
+            translate: -160px -65px;
+            transition-duration: 4s;
+            transform: skew(0deg,20deg);
+        }
+        .i1:hover~.i5{
+            translate: 160px -65px;
+            transition-duration: 4s;
+            transform: skew(0deg,-20deg);
+        }
+        .i1:hover~.i6{
+            translate: -240px -120px;
+            transition-duration: 4s;
+            transform: skew(0deg,25deg);
+        }
+        .i1:hover~.i7{
+            translate: 240px -120px;
+            transition-duration: 4s;
+            transform: skew(0deg,-25deg);
+        }
+        .i1:hover~.i8{
+            translate: -320px -170px;
+            transition-duration: 4s;
+            transform: skew(0deg,30deg);
+        }
+        .i1:hover~.i9{
+            translate: 320px -170px;
+            transition-duration: 4s;
+            transform: skew(0deg,-30deg);
+        }
+        .i1:hover~.i10{
+            translate: -400px -240px;
+            transition-duration: 4s;
+            transform: skew(0deg,35deg);
+        }
+        .i1:hover~.i11{
+            translate: 400px -240px;
+            transition-duration: 4s;
+            transform: skew(0deg,-35deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+    <img class="i1" src="./head.jpeg" style="z-index: 1;" />
+    <img class="i2 i" src="./head.jpeg" />
+    <img class="i3 i" src="./head.jpeg" />
+    <img class="i4 i" src="./head.jpeg" />
+    <img class="i5 i" src="./head.jpeg" />
+    <img class="i6 i" src="./head.jpeg" />
+    <img class="i7 i" src="./head.jpeg" />
+    <img class="i8 i" src="./head.jpeg" />
+    <img class="i9 i" src="./head.jpeg" />
+    <img class="i10 i" src="./head.jpeg" />
+    <img class="i11 i" src="./head.jpeg" />
+    
+    </div>
+</body>
+</html>
